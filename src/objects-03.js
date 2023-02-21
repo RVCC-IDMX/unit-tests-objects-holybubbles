@@ -25,6 +25,12 @@
  */
 function getVolumeOfBox(box) {
   // write your code here & return value
+  const volume = box.length * box.width * box.height;
+  if (!Number.isInteger(volume)) {
+    return Number.parseFloat(volume.toFixed(2));
+  }
+
+  return volume;
 }
 
 module.exports = {

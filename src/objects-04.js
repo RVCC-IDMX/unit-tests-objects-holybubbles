@@ -61,6 +61,7 @@ const response = {
  */
 function getOneEmployeeName(index) {
   // write your code here & return value
+  return response.employees[index].name;
 }
 
 /**
@@ -76,6 +77,7 @@ function getOneEmployeeName(index) {
  */
 function getEmployeeNames() {
   // write your code here & return value
+  return response.employees.map((e) => e.name);
 }
 
 module.exports = {

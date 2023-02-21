@@ -89,6 +89,7 @@ const colorHexCodes = {
  */
 function getColorValue(color) {
   // write your code here & return value
+  return colorHexCodes[color];
 }
 
 /**
@@ -110,6 +111,7 @@ function getColorValue(color) {
  */
 function testForColor(color) {
   // write your code here & return value
+  return colorHexCodes[color] !== undefined;
 }
 
 module.exports = {
